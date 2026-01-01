@@ -34,7 +34,9 @@ class ProductCard extends HTMLElement {
         this.startingPrice = salla.lang.get('pages.products.starting_price');
         this.addToCart = salla.lang.get('pages.cart.add_to_cart');
         this.outOfStock = salla.lang.get('pages.products.out_of_stock');
-
+        this.userLanguage = document.documentElement.lang || 'ar';
+        console.log(this.userLanguage);
+        console.log(salla);
         // re-render to update translations
         this.render();
       })
@@ -171,6 +173,51 @@ class ProductCard extends HTMLElement {
     .replace(/>/g, "&gt;");
   }
 
+  getRatingHTML() {
+    const ratings = salla.config.get('theme.settings.mahasin_rating') || [];
+    const currentLang = document.documentElement.lang || 'ar';
+    
+    // البحث عن rating مطابق للـ product.id
+    const matchedRating = ratings.find(rating => {
+      return rating?.productitem?.[0]?.value == this.product.id;
+    });
+
+    // إذا لم يوجد rating مطابق، نرجع string فارغ
+    if (!matchedRating || !matchedRating.rating_text) {
+      return '';
+    }
+
+    // تحديد النص حسب اللغة
+    let ratingText = '';
+    if (currentLang === 'ar' && matchedRating.rating_text.ar) {
+      ratingText = matchedRating.rating_text.ar;
+    } else if (currentLang === 'en' && matchedRating.rating_text.en) {
+      ratingText = matchedRating.rating_text.en;
+    } else {
+      // fallback: جرب العربي أولاً ثم الإنجليزي
+      ratingText = matchedRating.rating_text.ar || matchedRating.rating_text.en || '';
+    }
+
+    // إذا لم يوجد نص، لا نرجع شيء
+    if (!ratingText) {
+      return '';
+    }
+
+    // إرجاع HTML
+    return `
+      <div class="product-card-rating-wrapper">
+        <div class="product-card-rating">
+          <i class="sicon-star2"></i>
+          <i class="sicon-star2"></i>
+          <i class="sicon-star2"></i>
+          <i class="sicon-star2"></i>
+          <i class="sicon-star2"></i>
+        </div>
+        <span class="product-card-rating-count">${this.escapeHTML(ratingText)}</span>
+      </div>
+    `;
+  }
+
   render(){
     this.classList.add('s-product-card-entry'); 
     this.setAttribute('id', this.product.id);
@@ -219,29 +266,7 @@ class ProductCard extends HTMLElement {
             <h3 class="s-product-card-content-title">
               <a href="${this.product?.url}">${this.product?.name}</a>
             </h3>
-
-                  {% for rating in theme.settings.get('mahasin_rating') %}
-                    {% if rating.productitem[0].value == this.product.id %}
-                      <div class="product-card-rating-wrapper">
-                        <div class="product-card-rating">
-                            <i class="sicon-star2"></i>
-                            <i class="sicon-star2"></i>
-                            <i class="sicon-star2"></i>
-                            <i class="sicon-star2"></i>
-                            <i class="sicon-star2"></i>
-                        </div>
-                        <span class="product-card-rating-count">
-                            {% if user.language.code == 'ar' and rating.rating_text.ar is defined %}
-                                {{ rating.rating_text.ar }}
-                            {% elseif user.language.code == 'en' and rating.rating_text.en is defined %}
-                                {{ rating.rating_text.en }}
-                            {% else %}
-                                {{ rating.rating_text.ar|default(rating.rating_text.en|default('')) }}
-                            {% endif %}
-                        </span>
-                      </div>  
-                  {% endif %}
-                {% endfor %}
+            ${this.getRatingHTML()}
             ${this.product?.subtitle && !this.minimal ?
               `<p class="s-product-card-content-subtitle opacity-80">${this.product?.subtitle}</p>`
               : ``}
