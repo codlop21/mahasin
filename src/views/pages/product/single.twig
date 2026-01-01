@@ -269,9 +269,9 @@
                 </li>
                 {% endfor %}
             </ul>
-            {% set shippingTime = theme.settings.get('shipping_time_text') %}
+            {% set shippingTimeText = theme.settings.get('shipping_time_text') %}
             <pre>
-                    {{ shippingTimeText | raw }}
+                    {{ shippingTimeText | json_encode }}
                 </pre>  
             {% if shippingTimeText and (shippingTimeText.ar is defined and shippingTimeText.ar is not empty) or (shippingTimeText.en is defined and shippingTimeText.en is not empty) %}
                 <div class="shipping-time">
