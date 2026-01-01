@@ -20007,7 +20007,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   padding: 10px 0px;
   background: #486d7f;
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 30px;
 }
 .flex_imges {
@@ -20295,6 +20295,9 @@ salla-slider.details-slider salla-button.btn--wishlist {
 }
 .s-orders-status-container .sicon-box-bankers {
   margin: 0;
+}
+.flex_pricing {
+  margin-bottom: 10px !important;
 }
 .flex_pricing {
   display: flex;
