@@ -1,0 +1,79 @@
+{
+  "blocks": {
+    "header": {
+      "cart": "سلة المشتريات"
+    },
+    "appBanner": {
+      "download_now": "حمله الان"
+    }
+  },
+  "pages": {
+    "cart": {
+      "cart_options": "خيارات السلة"
+    },
+    "order": {
+      "can_edit_or_delete_your_review_within": "يمكنك تعديل أو حذف تقييمك خلال",
+      "edit_period_ended": "تم انتهاء المدة المحددة لتعديل التقييم",
+      "delete_period_ended": "تم انتهاء المدة المحددة لحذف التقييم",
+      "days_since_added": "أيام من إضافته",
+      "option_name": "الخيار",
+      "option_content": "المحتوى"
+    }
+  },
+  "common": {
+    "global": {
+      "add_to_cart":"إضافة للسلة",
+      "add_to_bag":"إضافة للسلة",
+      "back_to_top":"الرجوع للأعلى",
+      "general_settings": "اعدادات عامة",
+      "change":"تغيير",
+      "store_appearance": "مظهر المتجر",
+      "choose_light_or_dark_mode": "اختر الوضع النهاري او الليلي",
+      "light_mode": "الوضع النهاري",
+      "dark_mode": "الوضع الليلي",
+      "text_size": "حجم النص",
+      "choose_the_appropriate_text_size_for_you": "اختر حجم النص المناسب لك",
+      "small": "صغير",
+      "medium": "متوسط",
+      "large": "كبير",
+      "language_currency": "اللغة والعملة",
+      "blog": "المدونة",
+      "read_more": "اقرأ المزيد",
+      "read_more_details": "قرأة المزيد",
+      "shop_now": "تسوق الآن",
+      "write_your_comment_or_question": "اكتب تعليقك أو سؤالك",
+      "order_data": "بيانات الطلب",
+      "download_the_application_and_order_from_anywhere": "نزل التطبيق واطلب من أي مكان",
+      "follow_us_on_social_media_platforms": "تابعنا على منصات التواصل الاجتماعي",
+      "menu": "القائمة",
+      "welcome": "مرحبًا بك",
+      "login": "تسجيل الدخول",
+      "introduction_pages": "الصفحات التعريفية",
+      "user_name": "اسم المستخدم",
+      "remove_from_cart": "حذف من السلة",
+      "payment_method": "وسيلة الدفع",
+      "order_summary": "ملخص الطلب",
+      "offer_ends_in": "العرض ينتهي بعد",
+      "product_details": "تفاصيل المنتج",
+      "customer_reviews": "تقييمات العملاء",
+      "discount": "خصم",
+      "save": "وفر",
+      "click_here_for_more": "انقر هنا للمزيد من",
+      "Click_here_for_more_brands": "اضغط هنا للمذيد من ماركة",
+      "pro_details": "التفاصيل",
+      "pro_ratings": "التقيمات",
+      "remove_from_bin": "حذف من السلة",
+      "date_offer_end": "العرض ينتهي بعد",
+      "Shopping_cart": "سلة المشتريات",
+      "see_more": "مشاهدة المزيد",
+      "view_less": "مشاهدة أقل",
+      "fast_delivery": "توصيل للمنتجات في اسرع وقت",
+      "secure_shopping": "تسوق آمن، بياناتك محمية دائمًا",
+      "bank_offer_sub_title_multiple": "ادفع قيمة مشترياتك عبر أحد البطاقات البنكة التالية واحصل على الخصم المحدد",
+      "bank_offer_sub_title_single": "ادفع قيمة مشترياتك عبر أحد بطاقات بنك :bank_name واحصل على خصم بنسبة ",
+      "product_brand": "العلامة التجارية",
+      "click_above_image_to_zoom_in": "اضغط علي الصورة لتكبيرها",
+      "business_certificate": "موثّق في منصة الأعمال"
+    }
+  }
+}

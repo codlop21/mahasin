@@ -1,0 +1,27 @@
+<div class="section_marg">
+    <div class="bg-sec" style="background-image: url({{component.bg_advantages}});">
+        <div class="container">
+            <div class="features-container">
+                <img loading="lazy" width="170" height="75" class="feature-logo" src="{{component.mahasin_logo}}"
+                    alt="logo">
+
+                <div class="features-part">
+
+                    {% for item in component.advantages_collection %}
+                    <div class="item-box">
+                        <div class="icon">
+                            <img loading="lazy" width="64" height="64" src="{{item.advantage_img}}" alt="مدفوعات آمنة">
+                        </div>
+                        <div class="content">
+                            <h3>{{item.titel}}</h3>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

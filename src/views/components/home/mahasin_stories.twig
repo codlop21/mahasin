@@ -1,0 +1,162 @@
+<div class="section_marg">
+    <div class="container">
+        <h1 class="h1_story">{{component.titel}}</h1>
+        <salla-slider type="carousel" block-title="" show-controls="true" pagination="false" controls-outer auto-play
+            id="special-products-{{ position }}-slider">
+            <div slot="items">
+                {% for story in component.mahasin_stories %}
+                <div class="mahasin_story" data-popup-images='[
+            "{{story.popup_first_img}}",
+            "{{story.popup_second_img}}",
+            "{{story.popup_third_img}}",
+            "{{story.popup_fourth_img}}",
+            "{{story.popup_fivth_img}}"
+         ]'>
+
+                    <div class="flex_storeies story-content">
+                        <div class="image-compare">
+                            <img src="{{story.story_img_before}}" alt="Before" class="image-before">
+                            <img src="{{story.story_img_after}}" alt="After" class="image-after">
+
+                            <div class="slider-line"></div>
+                            <div class="slider-button"></div>
+                            <div class="label label-before">قبل</div>
+                            <div class="label label-after">بعد</div>
+                        </div>
+
+                        <div class="story_benfites">
+                            <h4>
+                                <a href="#">{{story.main_titel}}</a>
+                            </h4>
+
+                            <p>{{story.story_details}}</p>
+
+                            <button class="show_story" type="button">
+                                {{story.show_story}}
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                {% endfor %}
+
+
+            </div>
+        </salla-slider>
+    </div>
+
+</div>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.image-compare').forEach(compare => {
+            initImageCompare(compare);
+        });
+    });
+</script>
+
+<script>
+    function initImageCompare(container) {
+        if (container.dataset.inited) return;
+        container.dataset.inited = 'true';
+
+        const afterImg = container.querySelector('.image-after');
+        const line = container.querySelector('.slider-line');
+        const button = container.querySelector('.slider-button');
+
+        if (!afterImg || !line || !button) return;
+
+        let dragging = false;
+
+        function moveSlider(clientX) {
+            const rect = container.getBoundingClientRect();
+            let percent = ((clientX - rect.left) / rect.width) * 100;
+            percent = Math.max(0, Math.min(100, percent));
+
+            afterImg.style.clipPath =
+                `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0 100%)`;
+
+            line.style.left = `${percent}%`;
+            button.style.left = `${percent}%`;
+        }
+
+        moveSlider(container.getBoundingClientRect().left + container.offsetWidth / 2);
+
+        button.addEventListener('pointerdown', e => {
+            dragging = true;
+            button.setPointerCapture(e.pointerId);
+        });
+
+        button.addEventListener('pointermove', e => {
+            if (dragging) moveSlider(e.clientX);
+        });
+
+        button.addEventListener('pointerup', () => dragging = false);
+        button.addEventListener('pointercancel', () => dragging = false);
+
+        container.addEventListener('click', e => {
+            moveSlider(e.clientX);
+        });
+    }
+</script>
+
+<!-- order_order_now_Modal -->
+<salla-modal id="show_story" width="lg">
+    <div class="modal-story-content"></div>
+</salla-modal>
+
+<script>
+    /* 1️⃣ HTML أزرار الـ popup */
+    const storyButtonsHTML = `
+<div class="modal-product-buttons story_buttons">
+    <button type="button" id="global-modal-add-to-cart" class="btn-modal btn-modal-add-cart">
+        <span>إضافة للسلة</span>
+    </button>
+    <button type="button" id="global-modal-buy-now" class="btn-modal btn-modal-buy-now">
+        <span>اشتري الآن</span>
+    </button>
+</div>
+`;
+
+    /* 2️⃣ سكربت فتح المودال */
+    document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('show_story')) {
+            e.preventDefault();
+
+            const story = e.target.closest('.mahasin_story');
+            const content = story.querySelector('.story-content').cloneNode(true);
+
+            const btn = content.querySelector('.show_story');
+            if (btn) btn.remove();
+
+            const modalBody = document.querySelector('#show_story .modal-story-content');
+            modalBody.innerHTML = '';
+            modalBody.appendChild(content);
+
+            content.querySelectorAll('.image-compare').forEach(compare => {
+                delete compare.dataset.inited;
+                initImageCompare(compare);
+            });
+
+            // ✅ إضافة صور الـ popup أولاً قبل الأزرار
+            const popupImages = JSON.parse(story.dataset.popupImages || '[]');
+            if (popupImages.length) {
+                const popupImagesContainer = document.createElement('div');
+                popupImagesContainer.classList.add('popup-images-container');
+                popupImages.forEach(src => {
+                    const img = document.createElement('img');
+                    img.src = src;
+                    popupImagesContainer.appendChild(img);
+                });
+                modalBody.appendChild(popupImagesContainer);
+            }
+
+            // إضافة الأزرار بعد الصور
+            modalBody.insertAdjacentHTML('beforeend', storyButtonsHTML);
+
+            document.querySelector('#show_story').open();
+        }
+    });
+</script>

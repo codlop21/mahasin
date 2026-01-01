@@ -1,0 +1,23 @@
+<div class="section_marg">
+    <div class="container">
+        <div class="questions_sec">
+            <h1 class="h1_story">{{component.question_section_head_titel}}</h1>
+            <div class="all_questions__div_img">
+                <div class="all_questions">
+                    {% for question in component.questions_collection %}
+                    <div class="questions_div">
+                        <div class="question_icons">
+                            <span>0{{ loop.index }}</span>
+                            <h1>{{question.the_question}}</h1>
+                            <i class="sicon-hr"></i>
+                            <i class="sicon-add"></i>
+                        </div>
+                        <div class="answeer_div">{{question.question_answer}}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>

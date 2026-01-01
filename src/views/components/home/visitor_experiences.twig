@@ -1,0 +1,89 @@
+<div class="section_marg">
+    <div class="container">
+        <div class="visitor_experiences">
+            <h1 class="h1_story">{{component.titel}}</h1>
+            <salla-slider type="carousel" block-title="" show-controls="true" pagination="false" controls-outer
+                auto-play id="special-products-{{ position }}-slider">
+                <div slot="items">
+                    {% for real in component.reals_collection %}
+                    <div class="video-story">
+                        <img class="story-poster" src="{{real.reals_img}}">
+                        <div class="play-video" title="play-video">
+                            <svg width="17" height="23" viewBox="0 0 17 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.4324 9.7218C16.4657 10.5225 16.4657 12.083 15.4324 12.8837L3.93296 21.7942C2.61872 22.8125 0.707951 21.8758 0.707951 20.2132L0.707952 2.39223C0.707952 0.729617 2.61872 -0.207059 3.93296 0.8113L15.4324 9.7218Z"
+                                    fill="#1E1E1E" fill-opacity="0.5"></path>
+                            </svg>
+                        </div>
+
+                        <video class="story-video video_hidden" width="100%" muted playsinline>
+                            <source src="{{ real.reals_video }}" type="video/mp4">
+                        </video>
+
+                        <div class="video-title">
+                            <h3>{{real.poster_titel}}</h3>
+                        </div>
+                    </div>
+
+
+                    {% endfor %}
+                </div>
+            </salla-slider>
+        </div>
+    </div>
+</div>
+
+{# video_modal #}
+<salla-modal id="video-modal">
+    <div class="modal_content"></div>
+</salla-modal>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const modal = document.querySelector('#video-modal');
+    const modalContent = modal.querySelector('.modal_content');
+
+    document.addEventListener('click', function (e) {
+
+        const playBtn = e.target.closest('.play-video');
+        if (!playBtn) return;
+
+        e.preventDefault();
+
+        const card = playBtn.closest('.video-story');
+        if (!card) return;
+
+        const video = card.querySelector('.story-video');
+        const title = card.querySelector('.video-title');
+
+        const modalVideo = video.cloneNode(true);
+        modalVideo.classList.remove('video_hidden');
+        modalVideo.setAttribute('controls', 'true');
+        modalVideo.setAttribute('autoplay', 'true');
+
+        const modalTitle = title.cloneNode(true);
+
+        modalContent.innerHTML = '';
+        modalContent.appendChild(modalVideo);
+        modalContent.appendChild(modalTitle);
+
+        /* ✅ إضافة كلاس الاستايل */
+        modal.classList.add('story-modal-active');
+
+        modal.open();
+    });
+
+    /* ✅ عند الإغلاق نشيل الاستايلات */
+    modal.addEventListener('salla:close', function () {
+        modalContent.innerHTML = '';
+        modal.classList.remove('story-modal-active');
+    });
+
+});
+</script>
+
+
+

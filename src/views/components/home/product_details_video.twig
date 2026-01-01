@@ -1,0 +1,159 @@
+<div class="section_marg">
+    <div class="container">
+        <div class="hero-box">
+            <div class="hero-box-info">
+                <div class="product-card-rating-wrapper">
+                    <div class="product-card-rating">
+                        <i class="sicon-star2"></i>
+                        <i class="sicon-star2"></i>
+                        <i class="sicon-star2"></i>
+                        <i class="sicon-star2"></i>
+                        <i class="sicon-star2"></i>
+                    </div>
+                    <span class="product-card-rating-count">{{component.span_titel}}</span>
+                </div>
+                <h3>{{component.titel}}</h3>
+                <p>{{component.descreption}}</p>
+                <div class="price-box">
+                    <h4 class="price_after">{{component.price_after}} <span><svg class="riyal-svg"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124.14 1256.39" width="18" height="20"
+                                style="display:inline-block;vertical-align:-0.125em">
+                                <path fill="currentColor"
+                                    d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z">
+                                </path>
+                                <path fill="currentColor"
+                                    d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z">
+                                </path>
+                            </svg></span></h4>
+                    <h5 class="price_before">{{component.price_before}} <span><svg class="riyal-svg"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124.14 1256.39" width="18" height="20"
+                                style="display:inline-block;vertical-align:-0.125em">
+                                <path fill="currentColor"
+                                    d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z">
+                                </path>
+                                <path fill="currentColor"
+                                    d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z">
+                                </path>
+                            </svg></span></h5>
+                </div>
+                <div class="btns-spicial">
+                    {# <button onclick="(function(){event.preventDefault();
+                    document.querySelector('#order_now').open();
+                    return false;})();
+                     " data-modal-id="order_now" class="tp-btn ">{{component.order_now}}</button> #}
+                    <a href="{{component.know_more_ref}}" class="tp-btn tb-btn-outline">{{component.know_more}}</a>
+                </div>
+            </div>
+
+            <div class="hero-video">
+                <video width="100%" loop autoplay muted playsinline>
+                    <source src="{{ component.section_video }}" type="video/mp4">
+                </video>
+                <a href="{{component.video_ref}}"><i class="sicon-arrow-up-left"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- order_order_now_Modal -->
+<salla-modal id="order_now" Width="lg">
+
+    <div class="flex_itms">
+        <div class="modal-product-image-wrapper">
+            <img class="modal-product-image"
+                src="https://media.zid.store/thumbs/974d543a-b286-4efa-9b0e-e09fcc6e8408/1ff30b37-4975-48e9-a6be-9d2748321ead-thumbnail-1000x1000.png">
+        </div>
+        <div class="modal-product-info">
+            <h4 class="modal-product-name">زيت محاسن الشعر</h4>
+            <div class="modal-product-price-wrapper">
+                <div class="modal-price-stack">
+                    <h3 class="modal-sale-price">430.00 <svg class="riyal-svg" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1124.14 1256.39" width="21" height="24"
+                            style="display:inline-block;vertical-align:-0.125em">
+                            <path fill="currentColor"
+                                d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z">
+                            </path>
+                        </svg> </h3>
+                    <h5 class="modal-original-price" style="display: block;">747.00 <svg class="riyal-svg"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124.14 1256.39" width="13" height="15"
+                            style="display:inline-block;vertical-align:-0.125em">
+                            <path fill="currentColor"
+                                d="M699.62,1113.02h0c-20.06,44.48-33.32,92.75-38.4,143.37l424.51-90.24c20.06-44.47,33.31-92.75,38.4-143.37l-424.51,90.24Z">
+                            </path>
+                            <path fill="currentColor"
+                                d="M1085.73,895.8c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.33v-135.2l292.27-62.11c20.06-44.47,33.32-92.75,38.4-143.37l-330.68,70.27V66.13c-50.67,28.45-95.67,66.32-132.25,110.99v403.35l-132.25,28.11V0c-50.67,28.44-95.67,66.32-132.25,110.99v525.69l-295.91,62.88c-20.06,44.47-33.33,92.75-38.42,143.37l334.33-71.05v170.26l-358.3,76.14c-20.06,44.47-33.32,92.75-38.4,143.37l375.04-79.7c30.53-6.35,56.77-24.4,73.83-49.24l68.78-101.97v-.02c7.14-10.55,11.3-23.27,11.3-36.97v-149.98l132.25-28.11v270.4l424.53-90.28Z">
+                            </path>
+                        </svg> </h5>
+                    <span id="global-modal-discount" class="modal-discount-badge"
+                        style="display: inline-block;">-43%</span>
+                </div>
+            </div>
+            {# الخيارات مع الصور #}
+            <div id="global-variants-container" class="modal-variants-container" style="display: block;">
+                <h6 class="modal-variants-label">
+                    <span id="global-variant-option-label">الكمية:</span>
+                    <strong id="global-variant-option-value">٣ عبوات</strong>
+                </h6>
+                <div class="variants-grid">
+                    <div class="variant-item active" data-variant-id="29ec5108-3158-481c-9fc6-bc3a0012bda5">
+
+
+                        <img src="https://media.zid.store/thumbs/974d543a-b286-4efa-9b0e-e09fcc6e8408/1ff30b37-4975-48e9-a6be-9d2748321ead-thumbnail-370x370.png"
+                            alt="زيت محاسن الشعر - ٣ عبوات" class="variant-image">
+                    </div>
+
+                    <div class="variant-item " data-variant-id="81438877-1a90-49a3-9c54-a7d92ca01471">
+                        <em class="best-seller">الأكثر مبيعًا</em>
+
+                        <img src="https://media.zid.store/thumbs/974d543a-b286-4efa-9b0e-e09fcc6e8408/f95a86cd-6e62-4293-8508-29e568056512-thumbnail-370x370.png"
+                            alt="زيت محاسن الشعر - عبوتين" class="variant-image">
+                    </div>
+
+                    <div class="variant-item " data-variant-id="855ed0c4-b9d1-47d8-9192-6baa1d36a995">
+
+
+                        <img src="https://media.zid.store/thumbs/974d543a-b286-4efa-9b0e-e09fcc6e8408/97af1bbd-70c6-4424-a8ec-d3b06af25694-thumbnail-370x370-70.jpg"
+                            alt="زيت محاسن الشعر - عبوة" class="variant-image">
+                    </div>
+                </div>
+            </div>
+
+            {# الكمية #}
+            <div class="modal-quantity-wrapper">
+                <label class="modal-quantity-label">حدد الكمية</label>
+                <div class="quantity-input-wrapper">
+                    <button type="button" class="btn-quantity increase-quantity-global" aria-label="increase-quantity">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                            <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input type="number" id="global-modal-quantity" class="modal-quantity-input" min="1" value="1"
+                        readonly="">
+                    <button type="button" class="btn-quantity decrease-quantity-global" aria-label="decrease-quantity">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                            <path d="M20 12L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            {# الازرار #}
+            <div class="modal-product-buttons">
+                <button type="button" id="global-modal-add-to-cart" class="btn-modal btn-modal-add-cart">
+
+                    <span>إضافة للسلة</span>
+                </button>
+                <button type="button" id="global-modal-buy-now" class="btn-modal btn-modal-buy-now">
+                    <span>اشتري الآن</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</salla-modal>

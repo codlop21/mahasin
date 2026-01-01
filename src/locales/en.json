@@ -1,0 +1,79 @@
+{
+  "blocks": {
+    "header": {
+      "cart": "Cart"
+    },
+    "appBanner": {
+      "download_now": "download now"
+    }
+  },
+  "pages": {
+    "cart": {
+      "cart_options": "Cart Options"
+    },
+    "order": {
+      "can_edit_or_delete_your_review_within": "You can edit or delete your review within",
+      "edit_period_ended": "The period to edit the review has ended",
+      "delete_period_ended": "The period to delete the review has ended",
+      "days_since_added": "days since it was added",
+      "option_name": "Option name",
+      "option_content": "Content"
+    }
+  },
+  "common": {
+    "global": {
+      "add_to_cart":"Add to Cart",
+      "add_to_bag":"Add To Bag",
+      "back_to_top":"Back to top",
+      "general_settings": "General settings",
+      "change":"Change",
+      "store_appearance": "Store appearance",
+      "choose_light_or_dark_mode": "Choose light or dark mode",
+      "light_mode": "Light mode",
+      "dark_mode": "Dark mode",
+      "text_size": "text size",
+      "choose_the_appropriate_text_size_for_you": "Choose the appropriate text size for you",
+      "small": "small",
+      "medium": "medium",
+      "large": "large",
+      "language_currency": "Language & Currency",
+      "blog": "Blog",
+      "read_more": "Read More",
+      "read_more_details": "read more details",
+      "shop_now": "Shop Now",
+      "write_your_comment_or_question": "Write Your Comment or Question",
+      "order_data": "Order Data",
+      "download_the_application_and_order_from_anywhere": "Download the Application and Order from Anywhere",
+      "follow_us_on_social_media_platforms": "Follow Us on Social Media Platforms",
+      "menu": "Menu",
+      "welcome": "Welcome",
+      "login": "Login",
+      "introduction_pages": "Introduction Pages",
+      "user_name": "User Name",
+      "remove_from_cart": "Remove from Cart",
+      "payment_method": "Payment Method",
+      "order_summary": "Order Summary",
+      "offer_ends_in": "Offer Ends In",
+      "product_details": "Product Details",
+      "customer_reviews": "Customer Reviews",
+      "date_offer_end": "Offer ends after",
+      "discount": "discount",
+      "save": "save",
+      "click_here_for_more": "Click here for more",
+      "Click_here_for_more_brands": "Click here for more brands",
+      "pro_details": "details",
+      "pro_ratings": "ratings",
+      "remove_from_bin": "remove from bin",
+      "Shopping_cart": "Shopping cart",
+      "see_more": "See more",
+      "view_less": "View less",
+      "fast_delivery": "Product delivery in the shortest time possible",
+      "secure_shopping": "Secure Shopping, Your Data is Always Protected",
+      "bank_offer_sub_title_multiple": "Pay for your purchases via one of the following bank cards and get the specified discount",
+      "bank_offer_sub_title_single": "Pay for your purchases via :bank_name bank card and get discount",
+      "product_brand": "Brand",
+      "click_above_image_to_zoom_in": "Click on the image to enlarge it",
+      "business_certificate": "Verified in the business platform"
+    }
+  }
+}
