@@ -199,12 +199,8 @@
                         {{ product.subtitle }}
                     </h2>
                 {% endif %}
-                {% for rating in theme.settings.get('mahasin_rating') %}
-                {% if story.productitem[0].value == product.id %}
 
-                {% endif %}
-                {% endfor %}
-            <div class="flex_between_rating">
+            <div class="flex_between_rating 3">
                  {# start stars & evaluate #}
             <div class="product-card-rating-wrapper">
             <div class="product-card-rating">
@@ -676,7 +672,7 @@
                             </button>
                         </div>
                     </div>
-                    {% endif %}
+                    
                 </div>
                 {% endfor %}
             </div>
