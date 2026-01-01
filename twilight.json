@@ -226,6 +226,49 @@
             "value": false,
             "selected": false
         },
+
+           {
+            "id": "collection_advertisment",
+            "type": "collection",
+            "format": "collection",
+            "label": "شريط الإعلانات الخاص بصفحة تفاصيل المنتج",
+            "description": null,
+            "labelHTML": null,
+            "item_label": null,
+            "icon": "sicon-list-add",
+            "fields": [
+                {
+                    "id": "collection_advertisment.img_advertisment",
+                    "type": "string",
+                    "format": "image",
+                    "label": "الصورة",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false
+                },
+                {
+                    "id": "collection_advertisment.span_advertisment",
+                    "type": "string",
+                    "format": "text",
+                    "label": "العنوان",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "اكتب هنا..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "255"
+                }
+            ],
+            "value": [],
+            "minLength": 1,
+            "maxLength": "20"
+        },
         {
             "id": "accordion_collection",
             "type": "collection",
@@ -552,53 +595,12 @@
             "minLength": 1,
             "maxLength": "10"
         },
-        {
-            "id": "collection_advertisment",
-            "type": "collection",
-            "format": "collection",
-            "label": "إسليدر الإعلانات الخاص بصفحة تفاصيل المنتج",
-            "description": null,
-            "labelHTML": null,
-            "item_label": null,
-            "icon": "sicon-list-add",
-            "fields": [
-                {
-                    "id": "collection_advertisment.img_advertisment",
-                    "type": "string",
-                    "format": "image",
-                    "label": "الصورة",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "e.g. https://hostname.com/image.png",
-                    "icon": "sicon-image",
-                    "value": null,
-                    "required": false
-                },
-                {
-                    "id": "collection_advertisment.span_advertisment",
-                    "type": "string",
-                    "format": "text",
-                    "label": "العنوان",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "اكتب هنا..",
-                    "icon": "sicon-format-text-alt",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": "2",
-                    "maxLength": "255"
-                }
-            ],
-            "value": [],
-            "minLength": 1,
-            "maxLength": "20"
-        },
+    
         {
             "id": "titel",
             "type": "string",
             "format": "text",
-            "label": "العنوان الرئيسي الخاص بس سفراء محاسن في تفاصيل المنتج",
+            "label": "العنوان الرئيسي الخاص  بسفراء محاسن في تفاصيل المنتج",
             "description": null,
             "labelHTML": null,
             "placeholder": "اكتب هنا..",
