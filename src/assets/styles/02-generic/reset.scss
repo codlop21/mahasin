@@ -950,7 +950,7 @@ custom-salla-product-card .s-product-card-sale-price h4 {
   margin-bottom: 24px !important;
 }
 
- .s-slider-block__title .s-slider-block__title-left {
+.s-slider-block__title .s-slider-block__title-left {
   display: none !important;
 }
 
@@ -1494,7 +1494,7 @@ custom-salla-product-card .s-product-card-sale-price h4 {
   margin-top: auto;
 }
 
-.show_story:hover{
+.show_story:hover {
   background: #4b7b8f;
 }
 
@@ -1584,6 +1584,26 @@ custom-salla-product-card .s-product-card-sale-price h4 {
   flex: unset !important;
 }
 
+
+.mahasin_stores_sec .s-slider-block__title .s-slider-block__title-left {
+  display: block !important;
+}
+
+.s-slider-nav-arrow {
+  height: 32px;
+  width: 32px;
+}
+
+
+.s-slider-nav-arrow svg {
+  width: 30px;
+  height: 30px;
+  fill: #6197ad !important;
+}
+
+.s-slider-controls-outer .s-slider-block__title-nav {
+    width: 99% !important;
+}
 
 // end_mahasin_stories
 
@@ -2003,7 +2023,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
 }
 
 
-.main-content .s-button-element.s-button-btn{
+.main-content .s-button-element.s-button-btn {
   width: 100% !important;
   padding: 14px 12px !important;
   background: var(--color-primary) !important;
