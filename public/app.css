@@ -19988,6 +19988,12 @@ salla-slider.details-slider salla-button.btn--wishlist {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 15px !important;
 }
+.s-product-options-thumbnails-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 0.75rem;
+  gap: 0.75rem;
+}
 .s-product-options-thumbnails-wrapper div input[type=radio] + label img {
   -o-object-fit: contain !important;
      object-fit: contain !important;
@@ -20134,9 +20140,6 @@ salla-slider.details-slider salla-button.btn--wishlist {
   border: 2px solid #414042;
   border: 2px solid var(--color-primary);
   border-radius: 10px;
-}
-.s-product-options-thumbnails-wrapper div input label {
-  width: 120px;
 }
 .s-product-options-thumbnails-wrapper label {
   height: auto !important;
@@ -20625,9 +20628,19 @@ salla-slider.details-slider salla-button.btn--wishlist {
   direction: ltr;
   display: inline-block;
 }
+.s-product-options-thumbnails-wrapper div input[type=radio] + label {
+  border: 0;
+}
+.s-product-options-thumbnails-wrapper div input[type=radio] + label::before {
+  opacity: 1 !important;
+}
+.s-product-options-thumbnails-wrapper div input[type=radio] + label::before {
+  border-color: rgba(221, 221, 221, 0.8666666667);
+}
 .s-product-options-thumbnails-wrapper div input[type=radio]:checked + label::before {
   content: var(--tw-content);
-  opacity: 1;
+  border-color: #414042;
+  border-color: var(--color-primary);
 }
 @media (max-width: 1200px) {
   .video-title {
