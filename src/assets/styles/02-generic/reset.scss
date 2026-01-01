@@ -747,7 +747,7 @@ salla-cart-summary .s-cart-summary-content {
   flex-wrap: wrap !important;
 }
 
-.s-product-card-sale-price h4 {
+ custom-salla-product-card .s-product-card-sale-price h4 {
   margin: 0;
   font-size: 22px;
   display: flex;
@@ -2801,6 +2801,10 @@ salla-slider.details-slider salla-button.btn--wishlist {
 .s-product-options-thumbnails-wrapper div input[type=radio]:checked+label::before {
   content: var(--tw-content);
   border-color: var(--color-primary);
+}
+
+.s-product-options-thumbnails-wrapper {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 // end_mahasin_css
