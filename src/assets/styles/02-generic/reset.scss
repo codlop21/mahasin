@@ -2185,25 +2185,32 @@ salla-slider.details-slider salla-button.btn--wishlist {
 }
 
 .s-product-options-thumbnails-wrapper div input[type=radio]+label img {
-    object-fit: cover !important;
+  object-fit: cover !important;
 }
 
-.s-product-options-thumbnails-wrapper div input[type=radio] + label {
-    position: relative;
-    border: 2px solid #ced4da;
+.s-product-options-thumbnails-wrapper div input[type=radio]+label {
+  position: relative;
+  border: 2px solid #ced4da;
 }
 
 .s-product-options-thumbnails-wrapper div label::before {
-    background: transparent !important;
-    border: 2px solid  var(--color-primary); 
+  background: transparent !important;
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+
+}
+
+.s-product-options-thumbnails-wrapper div input label {
+  width: 120px;
 }
 
 .s-product-options-thumbnails-wrapper label {
-    height: auto !important;
+  height: auto !important;
+  border-radius: 10px;
 }
 
 .s-product-options-thumbnails-icon {
-    display: none !important;
+  display: none !important;
 }
 
 // end_product_detalis_page
@@ -2785,6 +2792,11 @@ salla-slider.details-slider salla-button.btn--wishlist {
 }
 
 // end_footer_css
+
+.s-product-options-thumbnails-wrapper div input[type=radio]:checked+label::before {
+  content: var(--tw-content);
+  opacity: 1;
+}
 
 // end_mahasin_css
 

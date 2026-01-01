@@ -20133,9 +20133,17 @@ salla-slider.details-slider salla-button.btn--wishlist {
 .s-product-options-thumbnails-wrapper div label::before {
   border: 2px solid #414042;
   border: 2px solid var(--color-primary);
+  border-radius: 10px;
+}
+.s-product-options-thumbnails-wrapper div input label {
+  position: relative;
+  border: 2px solid #ced4da;
 }
 .s-product-options-thumbnails-wrapper label {
   height: auto !important;
+}
+.s-product-options-thumbnails-wrapper label {
+  border-radius: 10px;
 }
 .s-product-options-thumbnails-icon {
   display: none !important;
@@ -20617,6 +20625,10 @@ salla-slider.details-slider salla-button.btn--wishlist {
 .tp-footer-talk h4 a {
   direction: ltr;
   display: inline-block;
+}
+.s-product-options-thumbnails-wrapper div input[type=radio]:checked + label::before {
+  content: var(--tw-content);
+  opacity: 1;
 }
 @media (max-width: 1200px) {
   .video-title {
