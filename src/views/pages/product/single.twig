@@ -202,6 +202,7 @@
 
             <div class="flex_between_rating ">
                 {% for rating in theme.settings.get('mahasin_rating') %}
+                <pre>{{ rating | json_encode }}</pre>
                     {% if rating.productitem[0].value == product.id %}
                         <div class="product-card-rating-wrapper">
                             <div class="product-card-rating">
@@ -211,7 +212,7 @@
                                 <i class="sicon-star2"></i>
                                 <i class="sicon-star2"></i>
                             </div>
-                        <span class="product-card-rating-count">{{ rating.rating_text }}</span>
+                        <span class="product-card-rating-count">{{ rating.rating_text.ar }}</span>
                         </div>
                     {% endif %}
                 {% endfor %}
