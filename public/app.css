@@ -1,6 +1,6 @@
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/.pnpm/css-loader@6.11.0_webpack@5.104.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/.pnpm/postcss-loader@7.3.4_postcss@8.5.6_webpack@5.104.1/node_modules/postcss-loader/dist/cjs.js!./node_modules/.pnpm/sass-loader@13.3.3_sass@1.97.1_webpack@5.104.1/node_modules/sass-loader/dist/cjs.js!./src/assets/styles/app.scss ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/styles/app.scss ***!
+  \*******************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /*
  * IMPORTANT NOTE: Theme based on Tailwindcss but for the purpose of simplifing the DOM we use
@@ -19288,6 +19288,9 @@ custom-salla-product-card .s-product-card-sale-price h4 {
   width: 25px;
   fill: #fff;
 }
+.visitor_experiences .s-slider-block__title .s-slider-block__title-left {
+  display: block !important;
+}
 .bg-sec {
   background-size: cover;
   background-repeat: no-repeat;
@@ -19593,6 +19596,23 @@ custom-salla-product-card .s-product-card-sale-price h4 {
 }
 .modal-product-buttons.story_buttons .btn-modal {
   min-width: 180px;
+}
+.mahasin_stores_sec .s-slider-block__title .s-slider-block__title-left {
+  display: block !important;
+}
+.s-slider-nav-arrow {
+  height: 32px;
+  width: 32px;
+}
+.s-slider-nav-arrow svg {
+  fill: #6197ad !important;
+}
+.s-slider-nav-arrow svg {
+  width: 30px;
+  height: 30px;
+}
+.s-slider-controls-outer .s-slider-block__title-nav {
+  width: 99% !important;
 }
 /* الخلفية الغامقة */
 .welcome-overlay {
