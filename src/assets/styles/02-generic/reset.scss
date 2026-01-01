@@ -2845,7 +2845,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-.cart-item.right_prt {
+.cart-item.right_prt .s-product-options-thumbnails-wrapper {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
