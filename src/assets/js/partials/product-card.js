@@ -36,7 +36,7 @@ class ProductCard extends HTMLElement {
         this.outOfStock = salla.lang.get('pages.products.out_of_stock');
         this.userLanguage = document.documentElement.lang || 'ar';
         console.log(this.userLanguage);
-        console.log(salla.config.get('theme.settings.mahasin_rating'));
+        console.log(salla);
         // re-render to update translations
         this.render();
       })
