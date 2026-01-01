@@ -2845,6 +2845,10 @@ salla-slider.details-slider salla-button.btn--wishlist {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.cart-item.right_prt {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
 // end_mahasin_css
 
 ////////////////////////////////////////////////////////////////////////////////
