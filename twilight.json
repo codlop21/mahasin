@@ -945,7 +945,7 @@
             "value": [
                 {
                     "features_product.feature_img": "https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/b8d9d3c7-b3e3-43c8-97bd-1e1299f0e115.webp",
-                    "features_product.feature_text": "اختراق عميق للشعرة"
+                    "features_product.feature_text.ar": "اختراق عميق للشعرة"
                 },
                 {
                     "features_product.feature_img": "https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/a92beda2-ae9d-4b35-affb-3634a3722f32.webp",
@@ -962,6 +962,21 @@
             ],
             "minLength": 1,
             "maxLength": "20"
+        },
+        {
+            "id": "shipping_time",
+            "type": "string",
+            "format": "text",
+            "label": "وقت الشحن",
+            "description": null,
+            "labelHTML": null,
+            "placeholder": "اكتب هنا..",
+            "icon": "sicon-format-text-alt",
+            "value": null,
+            "multilanguage": true,
+            "required": false,
+            "minLength": "2",
+            "maxLength": "1000"
         }
     ],
     "components": [
