@@ -20676,7 +20676,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .cart-submit-wrap .s-button-primary {
-  color: #fff;
+  color: #fff !important;
 }
 @media (max-width: 1200px) {
   .video-title {
