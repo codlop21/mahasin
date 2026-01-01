@@ -254,31 +254,14 @@
             </div>
 
             <ul class="features-product">
-            <li>
-            <img src="https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/b8d9d3c7-b3e3-43c8-97bd-1e1299f0e115.webp
-            ">
-            <div class="content-features-product">
-            <h3>اختراق عميق للشعرة</h3>
-            </div>
-            </li>
-            <li>
-                <img src=" https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/a92beda2-ae9d-4b35-affb-3634a3722f32.webp">
-                <div class="content-features-product">
-                <h3>بناء الكيراتين لإعادة القوة </h3>
-                </div>
-            </li>
-            <li>
-                <img src=" https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/a8de6d33-1de4-4131-9214-9a67ffd28d01.webp">
-                <div class="content-features-product">
-                    <h3>بناء شبكة دعم لتكوين هيكل للشعرة.</h3>
-                </div>
-            </li>
-            <li>
-                <img src="https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/b2af33f3-411f-404d-a5ec-efb356e2c7ac.webp">
-                <div class="content-features-product">
-                <h3>الحماية المستقبلية بطبقة واقية تحمي من التلف المستقبلي</h3>
-                </div>
-            </li>
+                {% for feature in theme.settings.get('features_product') %}
+                <li>
+                    <img loading="lazy" width="28" height="28" src="{{ feature.feature_img }}">
+                    <div class="content-features-product">
+                        <h3>{{ feature.feature_text }}</h3>
+                    </div>
+                </li>
+                {% endfor %}
             </ul>
             <div class="shipping-time">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
