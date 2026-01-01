@@ -21484,7 +21484,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   .cart-item .right_prt {
     padding: 18px 10px;
   }
-  .right_prt .s-product-options-option-content .s-form-control {
+  .cart-item .right_prt .s-product-options-option-content .s-form-control {
     width: 150px;
   }
   .breadcrumbs_sec .s-button-icon.s-button-small .rmove_btn_name {
