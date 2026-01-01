@@ -708,6 +708,22 @@
             "icon": "sicon-list-add",
             "fields": [
                 {
+                    "id": "mahasin_stories.productitem",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "المنتج",
+                    "description": "اختر المنتج الذي تريد عرض هذه القصة بداخله",
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "products",
+                    "multichoice": false,
+                    "searchable": true,
+                    "required": true,
+                    "value": []
+                },
+                {
                     "id": "mahasin_stories.story_img_before",
                     "type": "string",
                     "format": "image",
