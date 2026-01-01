@@ -19288,6 +19288,9 @@ custom-salla-product-card .s-product-card-sale-price h4 {
   width: 25px;
   fill: #fff;
 }
+.visitor_experiences .s-slider-block__title .s-slider-block__title-left {
+  display: block !important;
+}
 .bg-sec {
   background-size: cover;
   background-repeat: no-repeat;
