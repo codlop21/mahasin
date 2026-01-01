@@ -2407,6 +2407,11 @@ salla-slider.details-slider salla-button.btn--wishlist {
   gap: 10px;
 }
 
+.flex_span{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 #has_discount {
   display: flex !important;
   align-items: center !important;
