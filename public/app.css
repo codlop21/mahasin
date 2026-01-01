@@ -18300,9 +18300,6 @@ h5.subtitle {
 salla-maintenance-alert {
   display: none !important;
 }
-body #s-edit-alert {
-  display: none !important;
-}
 .salla-advertisement {
   height: 40px;
 }
