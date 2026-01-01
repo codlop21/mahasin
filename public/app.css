@@ -20183,16 +20183,16 @@ salla-slider.details-slider salla-button.btn--wishlist {
 .breadcrumbs_sec .s-product-options-wrapper {
   padding: 12px 0px;
 }
-.right_prt {
+.cart-item .right_prt {
   border: 1px solid #ecedeb;
   padding: 23px 20px;
 }
-.right_prt .s-product-options-option {
+.cart-item .right_prt .s-product-options-option {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.right_prt .s-product-options-option-content .s-form-control {
+.cart-item .right_prt .s-product-options-option-content .s-form-control {
   width: 300px;
 }
 .flex_above {
@@ -20300,6 +20300,11 @@ salla-slider.details-slider salla-button.btn--wishlist {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.flex_span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 #has_discount {
   display: flex !important;
@@ -21248,7 +21253,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   .product_photoe a img {
     width: 100%;
   }
-  .right_prt .s-product-options-option {
+  .cart-item .right_prt .s-product-options-option {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -21298,7 +21303,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   .bg-sec {
     padding: 20px 0;
   }
-  .right_prt .s-product-options-option-content .s-form-control {
+  .cart-item .right_prt .s-product-options-option-content .s-form-control {
     width: 200px;
   }
   .s-product-options-thumbnails-wrapper {
@@ -21434,7 +21439,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   .s-slider-block__title h2 {
     font-size: 19px !important;
   }
-  .right_prt .s-product-options-option {
+  .cart-item .right_prt .s-product-options-option {
     gap: 10px;
   }
   .flex_above {
@@ -21481,10 +21486,10 @@ salla-slider.details-slider salla-button.btn--wishlist {
   }
 }
 @media (max-width: 375px) {
-  .right_prt {
+  .cart-item .right_prt {
     padding: 18px 10px;
   }
-  .right_prt .s-product-options-option-content .s-form-control {
+  .cart-item .right_prt .s-product-options-option-content .s-form-control {
     width: 150px;
   }
   .breadcrumbs_sec .s-button-icon.s-button-small .rmove_btn_name {
