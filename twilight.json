@@ -856,6 +856,52 @@
             "value": [],
             "minLength": 1,
             "maxLength": "20"
+        },
+        {
+            "id": "mahasin_rating",
+            "type": "collection",
+            "format": "collection",
+            "label": "التقييمات الخاصة بالمنتجات ",
+            "description": null,
+            "labelHTML": null,
+            "item_label": null,
+            "icon": "sicon-list-add",
+            "fields": [
+                {
+                    "id": "mahasin_stories.productitem",
+                    "type": "items",
+                    "format": "dropdown-list",
+                    "label": "المنتج",
+                    "description": "اختر المنتج الذي تريد عرض هذه القصة بداخله",
+                    "labelHTML": null,
+                    "icon": "sicon-keyboard_arrow_down",
+                    "selected": [],
+                    "options": [],
+                    "source": "products",
+                    "multichoice": false,
+                    "searchable": true,
+                    "required": false,
+                    "value": []
+                },
+                {
+                    "id": "mahasin_rating.rating_text",
+                    "type": "string",
+                    "format": "text",
+                    "label": "النص الخاص بالتقييم",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "اكتب هنا..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "255"
+                }
+            ],
+            "value": [],
+            "minLength": 1,
+            "maxLength": "20"
         }
     ],
     "components": [
