@@ -880,7 +880,7 @@
                     "source": "products",
                     "multichoice": false,
                     "searchable": true,
-                    "required": true,
+                    "required": false,
                     "value": []
                 },
                 {
