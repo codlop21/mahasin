@@ -20136,8 +20136,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   border-radius: 10px;
 }
 .s-product-options-thumbnails-wrapper div input label {
-  position: relative;
-  border: 2px solid #ced4da;
+  width: 120px;
 }
 .s-product-options-thumbnails-wrapper label {
   height: auto !important;
