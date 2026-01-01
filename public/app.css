@@ -19988,10 +19988,6 @@ salla-slider.details-slider salla-button.btn--wishlist {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 15px !important;
 }
-.s-product-options-thumbnails-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .s-product-options-thumbnails-wrapper div input[type=radio] + label img {
   -o-object-fit: contain !important;
      object-fit: contain !important;
