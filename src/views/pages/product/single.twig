@@ -269,7 +269,7 @@
                 </li>
                 {% endfor %}
             </ul>
-            {% set shippingTime = theme.settings.get('shipping_time') %}
+            {% set shippingTime = theme.settings.get('shipping_time_text') %}
             <pre>
                 {{ shippingTime | json_encode }}
             </pre>  

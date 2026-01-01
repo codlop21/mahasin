@@ -964,16 +964,16 @@
             "maxLength": "20"
         },
         {
-            "id": "shipping_time",
+            "id": "shipping_time_text",
             "type": "string",
             "format": "text",
-            "label": "وقت الشحن",
+            "label": "نص الوقت الخاص بالشحن",
             "description": null,
             "labelHTML": null,
             "placeholder": "اكتب هنا..",
             "icon": "sicon-format-text-alt",
             "value": null,
-            "multilanguage": true,
+            "multilanguage": false,
             "required": false,
             "minLength": "2",
             "maxLength": "1000"
