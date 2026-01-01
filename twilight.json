@@ -338,6 +338,21 @@
                     "required": false
                 },
                 {
+                    "id": "accordion_collection.accordion_video",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "500"
+                },
+                {
                     "id": "accordion_collection.accordion_content_tow",
                     "type": "string",
                     "format": "text",
@@ -363,6 +378,21 @@
                     "icon": "sicon-image",
                     "value": null,
                     "required": false
+                },
+                {
+                    "id": "accordion_collection.accordion_video_tow",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "500"
                 },
                 {
                     "id": "accordion_collection.accordion_content_three",
@@ -392,6 +422,21 @@
                     "required": false
                 },
                 {
+                    "id": "accordion_collection.accordion_video_three",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "500"
+                },
+                {
                     "id": "accordion_collection.accordion_content_four",
                     "type": "string",
                     "format": "text",
@@ -417,6 +462,21 @@
                     "icon": "sicon-image",
                     "value": null,
                     "required": false
+                },
+                {
+                    "id": "accordion_collection.accordion_video_four",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "500"
                 },
                 {
                     "id": "accordion_collection.accordion_content_five",
@@ -446,6 +506,21 @@
                     "required": false
                 },
                 {
+                    "id": "accordion_collection.accordion_video_five",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "500"
+                },
+                {
                     "id": "accordion_collection.accordion_content_six",
                     "type": "string",
                     "format": "text",
@@ -471,6 +546,21 @@
                     "icon": "sicon-image",
                     "value": null,
                     "required": false
+                },
+                {
+                    "id": "accordion_collection.accordion_video_six",
+                    "type": "string",
+                    "format": "url",
+                    "inputType": "url",
+                    "label": "رابط الفيديو",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://salla.sa",
+                    "icon": "sicon-link",
+                    "value": null,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "500"
                 },
                 {
                     "id": "accordion_collection.accordion_content_seven",
@@ -500,7 +590,7 @@
                     "required": false
                 },
                 {
-                    "id": "accordion_collection.accordion_video",
+                    "id": "accordion_collection.accordion_video_seven",
                     "type": "string",
                     "format": "url",
                     "inputType": "url",
