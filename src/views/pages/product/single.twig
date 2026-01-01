@@ -640,6 +640,7 @@
             id="special-products-{{ position }}-slider">
             <div slot="items">
                 {% for story in theme.settings.get('mahasin_stories') %}
+                {% if story.productitem[0].value == product.id %}
                 <div class="mahasin_story" data-popup-images='[
             "{{story.popup_first_img}}",
             "{{story.popup_second_img}}",
@@ -671,7 +672,7 @@
                             </button>
                         </div>
                     </div>
-
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
