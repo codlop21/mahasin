@@ -201,18 +201,20 @@
                 {% endif %}
 
             <div class="flex_between_rating ">
-                 {# start stars & evaluate #}
-            <div class="product-card-rating-wrapper">
-            <div class="product-card-rating">
-                <i class="sicon-star2"></i>
-                <i class="sicon-star2"></i>
-                <i class="sicon-star2"></i>
-                <i class="sicon-star2"></i>
-                <i class="sicon-star2"></i>
-                </div>
-             <span class="product-card-rating-count">(608 تقييم)</span>
-             </div>
-        {# end stars & evaluate #}
+                {% for rating in theme.settings.get('mahasin_rating') %}
+                    {% if rating.productitem[0].value == product.id %}
+                        <div class="product-card-rating-wrapper">
+                            <div class="product-card-rating">
+                                <i class="sicon-star2"></i>
+                                <i class="sicon-star2"></i>
+                                <i class="sicon-star2"></i>
+                                <i class="sicon-star2"></i>
+                                <i class="sicon-star2"></i>
+                            </div>
+                        <span class="product-card-rating-count">{{ rating.rating_text }}</span>
+                        </div>
+                    {% endif %}
+                {% endfor %}
         {% if product.sold_quantity %}
         <div class="flex_sold_quantity">
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
