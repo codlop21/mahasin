@@ -2025,10 +2025,6 @@ salla-slider.details-slider salla-button.btn--wishlist {
   gap: 15px !important;
 }
 
-.s-product-options-thumbnails-wrapper{
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 
 .s-product-options-thumbnails-wrapper div input[type=radio]+label img {
   object-fit: contain !important;
