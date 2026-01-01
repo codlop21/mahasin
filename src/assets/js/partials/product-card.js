@@ -34,7 +34,9 @@ class ProductCard extends HTMLElement {
         this.startingPrice = salla.lang.get('pages.products.starting_price');
         this.addToCart = salla.lang.get('pages.cart.add_to_cart');
         this.outOfStock = salla.lang.get('pages.products.out_of_stock');
-
+        this.userLanguage = document.documentElement.lang || 'ar';
+        console.log(this.userLanguage);
+        console.log(salla.config.get('theme.settings.mahasin_rating'));
         // re-render to update translations
         this.render();
       })
