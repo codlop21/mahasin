@@ -747,7 +747,7 @@ salla-cart-summary .s-cart-summary-content {
   flex-wrap: wrap !important;
 }
 
- custom-salla-product-card .s-product-card-sale-price h4 {
+custom-salla-product-card .s-product-card-sale-price h4 {
   margin: 0;
   font-size: 22px;
   display: flex;
@@ -2405,13 +2405,16 @@ salla-slider.details-slider salla-button.btn--wishlist {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 10px !important;
 }
 
-.flex_span{
+.flex_span {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-size: 19px;
 }
+
 #has_discount {
   display: flex !important;
   align-items: center !important;
@@ -2794,11 +2797,11 @@ salla-slider.details-slider salla-button.btn--wishlist {
 }
 
 // end_footer_css
-.s-product-options-thumbnails-wrapper div input[type=radio] + label {
-    border: 0;
+.s-product-options-thumbnails-wrapper div input[type=radio]+label {
+  border: 0;
 }
 
-.s-product-options-thumbnails-wrapper div input[type=radio]+label::before{
+.s-product-options-thumbnails-wrapper div input[type=radio]+label::before {
   opacity: 1 !important;
   border-color: #dddd;
 }
@@ -2809,7 +2812,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
 }
 
 .s-product-options-thumbnails-wrapper {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 // end_mahasin_css

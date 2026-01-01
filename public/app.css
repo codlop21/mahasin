@@ -20301,6 +20301,12 @@ salla-slider.details-slider salla-button.btn--wishlist {
   align-items: center;
   gap: 10px;
 }
+.flex_span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 19px;
+}
 #has_discount {
   display: flex !important;
   align-items: center !important;
