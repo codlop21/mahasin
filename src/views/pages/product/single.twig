@@ -494,7 +494,38 @@
             </div>
         </div>
 
-        {# start_accordion_product_description_rating #}
+  <salla-offer></salla-offer>
+ </div>
+
+   {#start_advertisment_bar#}
+        <div class="hiden_div">
+        <div class="flex_imges">
+
+        <div class="parent_brand_div">
+        {% for item in theme.settings.get('collection_advertisment') %}
+        <div class="brand_div">
+            <img loading="lazy" width="26" height="26"  src="{{item.img_advertisment}}">
+            <span>{{item.span_advertisment}}</span>
+        </div>
+        {% endfor %}
+        </div>
+    
+
+        <div class="parent_brand_div">
+         {% for item in theme.settings.get('collection_advertisment') %}
+        <div class="brand_div">
+            <img loading="lazy" width="26" height="26"  src="{{item.img_advertisment}}">
+            <span>{{item.span_advertisment}}</span>
+        </div>
+        {% endfor %}
+        </div>
+   
+            </div>
+         </div>
+ {# end_advertisment_bar #}
+
+ <div class="container">
+     {# start_accordion_product_description_rating #}
 
         <div class="section_marg accordion_marg">
         <div class="flex_all">
@@ -689,36 +720,8 @@
 </salla-modal>
 
  {# نهاية قصص كاملين المحاسن #}
-
-  <salla-offer></salla-offer>
  </div>
 
-   {#start_advertisment_bar#}
-        <div class="hiden_div">
-        <div class="flex_imges">
-
-        <div class="parent_brand_div">
-        {% for item in theme.settings.get('collection_advertisment') %}
-        <div class="brand_div">
-            <img loading="lazy" width="26" height="26"  src="{{item.img_advertisment}}">
-            <span>{{item.span_advertisment}}</span>
-        </div>
-        {% endfor %}
-        </div>
-    
-
-        <div class="parent_brand_div">
-         {% for item in theme.settings.get('collection_advertisment') %}
-        <div class="brand_div">
-            <img loading="lazy" width="26" height="26"  src="{{item.img_advertisment}}">
-            <span>{{item.span_advertisment}}</span>
-        </div>
-        {% endfor %}
-        </div>
-   
-            </div>
-         </div>
-        {# end_advertisment_bar #}
 {# start_questions_collection #}
     <div class="section_marg marg_bootm">
     <div class="container">
