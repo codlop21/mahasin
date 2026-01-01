@@ -902,6 +902,66 @@
             "value": [],
             "minLength": 1,
             "maxLength": "20"
+        },
+        {
+            "id": "features_product",
+            "type": "collection",
+            "format": "collection",
+            "label": "التقييمات الخاصة بالمنتجات ",
+            "description": null,
+            "labelHTML": null,
+            "item_label": null,
+            "icon": "sicon-list-add",
+            "fields": [
+                {
+                    "id": "features_product.feature_img",
+                    "type": "string",
+                    "format": "image",
+                    "label": "الصورة الخاصة بالميزة",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false
+                },
+                {
+                    "id": "features_product.feature_text",
+                    "type": "string",
+                    "format": "text",
+                    "label": "النص الخاص بالميزة",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "اكتب هنا..",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": "2",
+                    "maxLength": "255"
+                }
+                
+            ],
+            "value": [
+                {
+                    "features_product.feature_img": "https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/b8d9d3c7-b3e3-43c8-97bd-1e1299f0e115.webp",
+                    "features_product.feature_text": "اختراق عميق للشعرة"
+                },
+                {
+                    "features_product.feature_img": "https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/a92beda2-ae9d-4b35-affb-3634a3722f32.webp",
+                    "features_product.feature_text": "بناء الكيراتين لإعادة القوة "
+                },
+                {
+                    "features_product.feature_img": "https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/a8de6d33-1de4-4131-9214-9a67ffd28d01.webp",
+                    "features_product.feature_text": "بناء شبكة دعم لتكوين هيكل للشعرة."
+                },
+                {
+                    "features_product.feature_img": "https://media.zid.store/974d543a-b286-4efa-9b0e-e09fcc6e8408/b2af33f3-411f-404d-a5ec-efb356e2c7ac.webp",
+                    "features_product.feature_text": "الحماية المستقبلية بطبقة واقية تحمي من التلف المستقبلي"
+                }
+            ],
+            "minLength": 1,
+            "maxLength": "20"
         }
     ],
     "components": [
