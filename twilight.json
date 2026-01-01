@@ -1694,6 +1694,32 @@
                     "value": "<div ><img class='w-full' src='https://cdn.salla.network/images/themes/raed/preview-images/custom-testimonials.png?v=1.1'></div>"
                 },
                 {
+                    "id": "sectiontitle",
+                    "type": "string",
+                    "format": "text",
+                    "label": "عنوان السيكشن",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "اكتب هنا ....",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": true,
+                    "required": false
+                },
+                {
+                    "id": "sectiontitledesc",
+                    "type": "string",
+                    "format": "text",
+                    "label": "وصف السيكشن",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "اكتب هنا ....",
+                    "icon": "sicon-format-text-alt",
+                    "value": null,
+                    "multilanguage": true,
+                    "required": false
+                },
+                {
                     "id": "sliders",
                     "type": "collection",
                     "format": "collection",

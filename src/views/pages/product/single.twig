@@ -255,18 +255,29 @@
 
             <ul class="features-product">
                 {% for feature in theme.settings.get('features_product') %}
-                <li>
-                    <img loading="lazy" width="28" height="28" src="{{ feature.feature_img }}">
-                    <div class="content-features-product">
-                        <h3>{% if user.language.code == 'ar' and feature.feature_text.ar is defined %}
-                                {{ feature.feature_text.ar }}
+                            {% if user.language.code == 'ar' and feature.feature_text.ar is defined %}
+                                <li>
+                                    <img loading="lazy" width="28" height="28" src="{{ feature.feature_img }}">
+                                    <div class="content-features-product">
+                                        <h3>{{ feature.feature_text.ar }}</h3>
+                                    </div>
+                                </li>
                             {% elseif user.language.code == 'en' and feature.feature_text.en is defined %}
-                                {{ feature.feature_text.en }}
+                                <li>
+                                    <img loading="lazy" width="28" height="28" src="{{ feature.feature_img }}">
+                                    <div class="content-features-product">
+                                        <h3>{{ feature.feature_text.en }}</h3>
+                                    </div>
+                                </li>
                             {% else %}
-                                {{ feature.feature_text.ar|default(feature.feature_text.en|default('')) }}
-                            {% endif %}</h3>
-                    </div>
-                </li>
+                                <li>
+                                    <img loading="lazy" width="28" height="28" src="{{ feature.feature_img }}">
+                                    <div class="content-features-product">
+                                        <h3>{{ feature.feature_text.ar|default(feature.feature_text.en|default('')) }}
+                                            </h3>
+                                    </div>
+                                </li>
+                            {% endif %}
                 {% endfor %}
             </ul>
             {% set shippingTimeText = theme.settings.get('shipping_time_text') %}
