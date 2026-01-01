@@ -19960,7 +19960,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
 .s-quantity-input-input {
   font-size: 20px;
 }
-.main-content .undefined.s-button-element.s-button-btn {
+.main-content .s-button-element.s-button-btn {
   width: 100% !important;
   padding: 14px 12px !important;
   background: #414042 !important;
@@ -20976,7 +20976,7 @@ salla-slider.details-slider salla-button.btn--wishlist {
   .s-fast-checkout-button.outline {
     padding: 19px 5px !important;
   }
-  .main-content .undefined.s-button-element.s-button-btn {
+  .main-content .s-button-element.s-button-btn {
     padding: 10px 5px !important;
   }
   .quantity-add-cart {
