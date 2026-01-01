@@ -220,16 +220,28 @@ class ProductCard extends HTMLElement {
               <a href="${this.product?.url}">${this.product?.name}</a>
             </h3>
 
-                    <div class="product-card-rating-wrapper">
-                    <div class="product-card-rating">
-                        <i class="sicon-star2"></i>
-                        <i class="sicon-star2"></i>
-                        <i class="sicon-star2"></i>
-                        <i class="sicon-star2"></i>
-                        <i class="sicon-star2"></i>
-                    </div>
-                    <span class="product-card-rating-count">(608 تقييم)</span>
-                </div>
+                  {% for rating in theme.settings.get('mahasin_rating') %}
+                    {% if rating.productitem[0].value == this.product.id %}
+                      <div class="product-card-rating-wrapper">
+                        <div class="product-card-rating">
+                            <i class="sicon-star2"></i>
+                            <i class="sicon-star2"></i>
+                            <i class="sicon-star2"></i>
+                            <i class="sicon-star2"></i>
+                            <i class="sicon-star2"></i>
+                        </div>
+                        <span class="product-card-rating-count">
+                            {% if user.language.code == 'ar' and rating.rating_text.ar is defined %}
+                                {{ rating.rating_text.ar }}
+                            {% elseif user.language.code == 'en' and rating.rating_text.en is defined %}
+                                {{ rating.rating_text.en }}
+                            {% else %}
+                                {{ rating.rating_text.ar|default(rating.rating_text.en|default('')) }}
+                            {% endif %}
+                        </span>
+                      </div>  
+                  {% endif %}
+                {% endfor %}
             ${this.product?.subtitle && !this.minimal ?
               `<p class="s-product-card-content-subtitle opacity-80">${this.product?.subtitle}</p>`
               : ``}

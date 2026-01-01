@@ -202,7 +202,7 @@
 
             <div class="flex_between_rating ">
                 {% for rating in theme.settings.get('mahasin_rating') %}
-                <pre>{{ rating | json_encode }}</pre>
+                
                     {% if rating.productitem[0].value == product.id %}
                         <div class="product-card-rating-wrapper">
                             <div class="product-card-rating">
@@ -212,7 +212,15 @@
                                 <i class="sicon-star2"></i>
                                 <i class="sicon-star2"></i>
                             </div>
-                        <span class="product-card-rating-count">{{ rating.rating_text.ar }}</span>
+                        <span class="product-card-rating-count">
+                            {% if user.language.code == 'ar' and rating.rating_text.ar is defined %}
+                                {{ rating.rating_text.ar }}
+                            {% elseif user.language.code == 'en' and rating.rating_text.en is defined %}
+                                {{ rating.rating_text.en }}
+                            {% else %}
+                                {{ rating.rating_text.ar|default(rating.rating_text.en|default('')) }}
+                            {% endif %}
+                        </span>
                         </div>
                     {% endif %}
                 {% endfor %}
