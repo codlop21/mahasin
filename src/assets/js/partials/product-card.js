@@ -34,9 +34,6 @@ class ProductCard extends HTMLElement {
         this.startingPrice = salla.lang.get('pages.products.starting_price');
         this.addToCart = salla.lang.get('pages.cart.add_to_cart');
         this.outOfStock = salla.lang.get('pages.products.out_of_stock');
-        this.userLanguage = document.documentElement.lang || 'ar';
-        console.log(this.userLanguage);
-        console.log(salla);
         // re-render to update translations
         this.render();
       })
@@ -174,7 +171,27 @@ class ProductCard extends HTMLElement {
   }
 
   getRatingHTML() {
-    const ratings = salla.config.get('theme.settings.mahasin_rating') || [];
+    // الحصول على البيانات من window object أو من body attribute
+    let ratings = window.mahasinRating || [];
+    
+    // إذا لم تكن موجودة في window، نحاول قراءتها من body attribute
+    if (!ratings || ratings.length === 0) {
+      const bodyAttribute = document.body.getAttribute('data-mahasin-rating');
+      if (bodyAttribute) {
+        try {
+          ratings = JSON.parse(bodyAttribute);
+        } catch (e) {
+          console.warn('Failed to parse mahasin_rating data:', e);
+          return '';
+        }
+      }
+    }
+
+    // إذا لم تكن هناك بيانات، نرجع string فارغ
+    if (!ratings || ratings.length === 0) {
+      return '';
+    }
+
     const currentLang = document.documentElement.lang || 'ar';
     
     // البحث عن rating مطابق للـ product.id
