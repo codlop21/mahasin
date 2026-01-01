@@ -759,7 +759,7 @@ custom-salla-product-card .s-product-card-sale-price h4 {
 
 .s-product-card-sale-price span {
   text-decoration: line-through !important;
-  font-size: 16px !important;
+  font-size: 18px !important;
   color: #6b7280 !important;
   margin: 0 !important;
 }
@@ -1487,6 +1487,10 @@ custom-salla-product-card .s-product-card-sale-price h4 {
   width: 100%;
   color: #fff;
   margin-top: auto;
+}
+
+.show_story:hover{
+  background: #4b7b8f;
 }
 
 #show_story .flex_storeies.story-content {
