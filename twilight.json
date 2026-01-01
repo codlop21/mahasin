@@ -868,7 +868,7 @@
             "icon": "sicon-list-add",
             "fields": [
                 {
-                    "id": "mahasin_stories.productitem",
+                    "id": "mahasin_rating.productitem",
                     "type": "items",
                     "format": "dropdown-list",
                     "label": "المنتج",
